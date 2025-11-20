@@ -1,0 +1,22 @@
+# 登录插件配置
+
+# 是否启用登录系统
+require-login: true
+
+# 登录前是否允许移动
+allow-movement-before-login: false
+
+# 最大登录尝试次数
+max-login-attempts: 3
+
+# 会话超时时间（分钟）
+session-timeout-minutes: 30
+
+# 出生点位置（玩家登录前会被传送到这里）
+spawn-location:
+  world: world
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
