@@ -1,0 +1,25 @@
+name: ptsb
+version: '1.0-SNAPSHOT'
+main: org.examplea.ptsb.Ptsb
+
+
+api-version: 1.12
+description: 简单的登录插件
+commands:
+  login:
+    description: 登录账号
+    usage: /login <密码>
+  register:
+    description: 注册账号
+    usage: /register <密码> <确认密码>
+  changepassword:
+    description: 修改密码
+    usage: /changepassword <原密码> <新密码>
+  loginreload:
+    description: 重载插件配置
+    usage: /loginreload
+    permission: loginplugin.reload
+permissions:
+  loginplugin.reload:
+    description: 重载登录插件配置
+    default: op
